@@ -1,0 +1,256 @@
+
+    <div class="grid-wrapper _2">
+      <div id="w-node-_575ac3a0-f628-cb94-695b-6557dd7e5ac2-dd7e5ac0" class="navigation-container2">
+        <div class="navigation-wrapper-2">
+          <div class="navigation-menu-button w-nav-button">
+            <div data-is-ix2-target="1" class="lottie-animation-3" data-w-id="575ac3a0-f628-cb94-695b-6557dd7e5b60" data-animation-type="lottie" data-src="{{ 'large-lottie.json' | asset_url }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="5" data-duration="0"></div>
+          </div>
+          <nav role="navigation" class="navigation-menu w-nav-menu">
+            <div class="search-wrapper mobile-show">
+              <div data-hover="false" data-delay="500" data-w-id="e98872ab-30e0-176a-a515-b1d6566582f0" class="dropdown-search-3 w-dropdown">
+                <div class="search-toggle w-dropdown-toggle">
+                  <div class="search-icon-3">
+                    <div data-w-id="e98872ab-30e0-176a-a515-b1d6566582f3" data-is-ix2-target="1" class="lottie-animation-5" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/64ad91557ac504f4830bdcec/64ad91557ac504f4830bdece_search-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.5208333333333335" data-duration="0" data-ix2-initial-state="0"></div>
+                  </div>
+                </div>
+                <nav class="dropdown-search-list-2 w-dropdown-list">
+                  <div class="search-base">
+                    <form action="/search" class="search-3 w-form" method="get" role="search"><input class="search-input-3 w-input" maxlength="256" name="q" placeholder="{{ 'tn1e91545a' | t }}" type="search" id="search" required=""><input type="submit" class="search-button-2 w-button" value=""></form>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div data-hover="false" data-delay="0" class="navigation-dropdown2 w-dropdown">
+              <div class="navigation-toggle-2 w-dropdown-toggle">
+                <div>{{ 't274f16' | t }}</div>
+              </div>
+              <nav class="navigation-list-dropdown2 w-dropdown-list">
+                <div class="navigation-dropdown-base">
+                  <div class="navigation-grid-wrapper">
+                    <div class="navigation-link-wrapper span">
+                      <div class="link-list-nav">
+                        <div class="div-block">{%- for link in linklists['shop-menu'].links -%}
+                          {%- unless link.links != blank -%}<a href="{{ link.url }}" class="navigation-link-l2">{{ link.title }}</a>{%- endunless -%}
+                          {%- if link.links != blank -%}<div data-hover="" data-delay="0" class="dropdown-5 w-dropdown">
+                            <div class="dropdown-toggle-4 w-dropdown-toggle">
+                              <div class="icon-2 w-icon-dropdown-toggle"></div>
+                              <div data-href="{{ link.url }}">{{ link.title }}</div>
+                            </div>
+                            <nav class="dropdown-list-4 w-dropdown-list">
+                              {%- for child_link in link.links -%}<a href="{{ child_link.url }}" class="dropdown-link w-dropdown-link">{{ child_link.title }}</a>{%- endfor -%}
+                              
+                              
+                            </nav>
+                          </div>{%- endif -%}
+                        {%- endfor -%}</div>{%- render 'menu-error', menu: "shop-menu" -%}
+                      </div>
+                      <a href="/collections/all" class="button fill mobile w-inline-block">
+                        <div class="button-text-wrapper">
+                          <div class="button-text">{{ section.settings.link_text }}</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div data-hover="false" data-delay="0" class="navigation-dropdown2 w-dropdown">
+              <div class="navigation-toggle-2 w-dropdown-toggle">
+                <div>{{ 't3c2336d' | t }}</div>
+              </div>
+              <nav class="navigation-list-dropdown2 w-dropdown-list">
+                <div class="navigation-dropdown-base">
+                  <div class="navigation-grid-wrapper">
+                    <div class="navigation-link-wrapper span">
+                      <div class="link-list-nav">
+                        <div class="div-block">{%- for link in linklists['about-menu'].links -%}
+                          {%- unless link.links != blank -%}<a href="{{ link.url }}" class="navigation-link-l2">{{ link.title }}</a>{%- endunless -%}
+                          {%- if link.links != blank -%}<div data-hover="" data-delay="0" class="dropdown-5 w-dropdown">
+                            <div class="dropdown-toggle-4 w-dropdown-toggle">
+                              <div class="icon-small-2 _2 w-embed" data-href="{{ link.url }}">{{ link.title }}</div>
+                              <div>{{ 't27b8b2' | t }}</div>
+                            </div>
+                            <nav class="dropdown-list-4 w-dropdown-list">
+                              {%- for child_link in link.links -%}<a href="{{ child_link.url }}" class="dropdown-link w-dropdown-link">{{ child_link.title }}</a>{%- endfor -%}
+                              
+                              
+                            </nav>
+                          </div>{%- endif -%}
+                        {%- endfor -%}</div>{%- render 'menu-error', menu: "about-menu" -%}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <a href="https://steepmtnteahouse.com/" class="navigation-link tea-house mobile w-nav-link">{{ 'tn17b28130' | t }}</a>
+          </nav>
+        </div>
+        <div class="navigation-wrapper-2 centered">
+          <a href="{{ routes.root_url }}" aria-current="page" class="brand w-nav-brand w--current"><img src="{{ '64fd05c14ceea7b72a78a56f_updated-footer-logoasset-4-2.svg' | asset_url }}" loading="lazy" alt="" class="logo-image"></a>
+        </div>
+        <div id="w-node-_575ac3a0-f628-cb94-695b-6557dd7e5afb-dd7e5ac0" class="navigation-button-group">
+          <div class="search-wrapper mobile-hide">
+            <div data-hover="false" data-delay="500" data-w-id="898fb5e9-281c-3113-d3b6-44d1f66392de" class="dropdown-search-3 w-dropdown">
+              <div class="search-toggle w-dropdown-toggle">
+                <div class="search-icon-3">
+                  <div class="lottie-animation-5" data-w-id="898fb5e9-281c-3113-d3b6-44d1f66392e1" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/64ad91557ac504f4830bdcec/64ad91557ac504f4830bdece_search-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.5208333333333335" data-duration="0"></div>
+                </div>
+              </div>
+              <nav class="dropdown-search-list-2 w-dropdown-list">
+                <div class="search-base">
+                  <form action="/search" class="search-3 w-form" method="get" role="search"><input class="search-input-3 w-input" maxlength="256" name="q" placeholder="{{ 'tn1e91545a' | t }}" type="search" id="search" required=""><input type="submit" class="search-button-2 w-button" value=""></form>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <a href="https://steepmtnteahouse.com/" class="navigation-link tea-house w-nav-link">{{ 'tn17b28130' | t }}</a>
+          <div class="right-nav">
+            <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="rightSidebar" data-wf-cart-query="" data-wf-page-link-href-prefix="" data-wf-cart-duration="500" class="w-commerce-commercecartwrapper cart" udy-collection="cart">
+              <a href="#" data-node-type="commerce-cart-open-link" role="button" class="w-commerce-commercecartopenlink cart-button w-inline-block" aria-haspopup="dialog" aria-label="Open cart">
+                <div class="cart-wrapper-2">
+                  <div class="w-inline-block">{{ 't1fef40' | t }}</div>
+                  <div class="dynamic-quantity">
+                    <div class="w-inline-block">{{ 't28' | t }}</div>
+                    <div class="w-commerce-commercecartopenlinkcount cart-quantity">{{ cart.item_count }}</div>
+                    <div class="w-inline-block">{{ 't29' | t }}</div>
+                  </div>
+                </div>
+              </a>
+              <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-rightSidebar cart-content">
+                <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer cart-container">
+                  <div class="cart-top-2">
+                    <div class="cart-quantity-wrapper">
+                      <div>{{ 'tn4663670c' | t }}</div>
+                      <div class="inside-cart-quantity">
+                        <div>{{ 't28' | t }}</div>
+                        <div class="cart-quant green w-commerce-commercecartopenlinkcount">{{ cart.item_count }}</div>
+                        <div>{{ 't29' | t }}</div>
+                      </div>
+                    </div>
+                    <div class="w-commerce-commercecartheader close-cart">
+                      <a href="#" data-node-type="commerce-cart-close-link" role="button" class="w-commerce-commercecartcloselink close-button-2 w-inline-block" aria-label="Close cart">
+                        <div class="back-button-content"><img src="{{ 'close-dark.svg' | asset_url }}" loading="lazy" alt="" class="close-icon _2"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="w-commerce-commercecartformwrapper cart-form-wrapper-2">
+                    <form data-node-type="commerce-cart-form" style="display:none" class="w-commerce-commercecartform default-state">
+                      <script type="text/x-wf-template" id="wf-template-575ac3a0-f628-cb94-695b-6557dd7e5b27"><div data-node-type="cart-item" class="cart-item-wrapper w-commerce-commercecartitem" template-part-bind="575ac3a0-f628-cb94-695b-6557dd7e5b28"><div class="cart-item-2"><img data-node-type="cart-item-image" class="cart-image w-commerce-commercecartitemimage" src="<%= it.image %>" template-part-bind="575ac3a0-f628-cb94-695b-6557dd7e5b2a"><div data-node-type="cart-item-info" class="order-details w-commerce-commercecartiteminfo" template-part-bind="575ac3a0-f628-cb94-695b-6557dd7e5b2b"><div class="cart-item-top"><div class="cart-item-title"><div data-node-type="cart-product-name" class="cart-title-2 w-commerce-commercecartproductname" template-part-bind="575ac3a0-f628-cb94-695b-6557dd7e5b2e"><%= it.title %></div><ul class="option-list w-commerce-commercecartoptionlist" template-part-bind="575ac3a0-f628-cb94-695b-6557dd7e5b2f"><% Object.entries(it.properties).forEach( data =>  { %><li data-node-type="cart-option-list-item"><span data-node-type="cart-option-list-item-label"><%= data[0] %></span><span>: </span><span data-node-type="cart-option-list-item-value"><%= data[1] %></span></li><% }) %></ul></div><a data-node-type="cart-remove-link" class="remove-button" href="#" role="" template-part-bind="575ac3a0-f628-cb94-695b-6557dd7e5b37" data-product-id="<%= it.id %>"><img data-node-type="image" class="close-icon" src="https://uploads-ssl.webflow.com/64fc9803d1004a6d705d216c/64fc9803d1004a6d705d2267_multiply(24x24)%402x%20(3).svg" loading="lazy" width="auto" height="auto" alt="__wf_reserved_inherit"></a></div><div class="cart-item-bottom"><div class="quantity-cart-item"><div>Qty:</div><input class="w-commerce-commercecartquantity product-quantity-2" name="<%= it.id %>" type="number" min="0" min="1" value="<%= it.quantity %>" data-node-type="cart-quantity"></div><div><div class="price" template-part-bind="575ac3a0-f628-cb94-695b-6557dd7e5b3f"><%= it.price %></div><div class="compare-price-2" template-part-bind="575ac3a0-f628-cb94-695b-6557dd7e5b40"><%= it.original_price %></div></div></div></div></div></div></script>
+                      <div id="scrollbar" class="w-commerce-commercecartlist cart-list-2" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-575ac3a0-f628-cb94-695b-6557dd7e5b27"></div>
+                      <div class="w-commerce-commercecartfooter cart-footer-4">
+                        <div aria-live="" aria-atomic="false" class="w-commerce-commercecartlineitem cart-line-item no-underline">
+                          <div>{{ 'tn1093e5e0' | t }}</div>
+                          <div cart="total-price" class="price large w-commerce-commercecartordervalue">{{ cart.items_subtotal_price | money }}</div>
+                        </div>
+                        <!-- Browser Upgrade Warning for Safari Users -->
+                        <div id="browser-upgrade-warning-cart" style="display: none; padding-top: .5rem;
+                            padding-right: 1rem;
+                            padding-bottom: .5rem;
+                            padding-left: 1rem;
+                            background-color: #a74030;
+                            font-family: Gotham;
+                            font-size: .85rem;
+                            color: #faf4e7;
+                            text-align: center;
+                            margin-bottom:.5rem;">
+                            The Shopify checkout may not work with older versions of Safari. If you experience issues, please update to the latest version or use a different browser.
+                        </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var ua = navigator.userAgent;
+
+    // Check if the browser is Safari
+    if (/safari/i.test(ua) && !/chrome/i.test(ua)) {
+        document.getElementById('browser-upgrade-warning-cart').style.display = 'block';
+    }
+});
+</script>
+
+                        <div class="cart-bottom">
+                          <div class="checkout-actions">
+                            <div class="place-giftnote-here">
+                              <template id="giftnote_button">
+                              <style>
+                                #button {
+                                background-color: #2c6d7a;
+                                width: 100%;
+                                height: 50px;
+                                color: #faf4e7;
+                                font-size: 12px;
+                                font-family: Gotham,sans-serif;
+                                letter-spacing: 5px;
+                                text-transform: uppercase;
+                                margin-bottom: 12px;
+                                border-width: 0px;
+                                border-style: solid;
+                                border-radius: 0px;
+                                transition-property: all;
+                                transition-duration: 200ms;
+                                transition-timing-function: ease;
+                                
+                                }
+
+                                #button:hover{
+                                opacity:0.9;
+                                  
+                                }
+                              </style>
+                            </template>
+                            <giftnote-button 
+                              data-styles="giftnote_button"
+                              data-add="Add a gift message"
+                              data-edit="Edit gift message"
+                            ></giftnote-button>
+                            </div>
+                            <a href="/checkout" value="Continue to Checkout" data-node-type="cart-checkout-button" class="w-commerce-commercecartcheckoutbutton checkout-button-2" data-loading-text="Hang Tight...">{{ 'tn7941186e' | t }}</a>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="w-commerce-commercecartemptystate empty-cart">
+                      <div class="empty-cart-content">
+                        <div class="stacked-intro-2 center">
+                          <div class="stacked-description">
+                            <div class="heading-2 small">{{ 't6a82073f' | t }}</div>
+                            <div class="body-display-3 small">{{ 'tnb853c82' | t }}</div>
+                          </div>
+                          <a href="/collections/all" class="button fill w-inline-block">
+                            <div class="button-text-wrapper">
+                              <div class="button-text-3">{{ 'tn12958ea9' | t }}</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div aria-live="" style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate error-message-3">
+                      <div class="w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-general-error="Something went wrong when adding this item to the cart." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-cart_order_min-error="The order minimum was not met. Add more items to your cart to continue." data-w-cart-subscription_error-error="Before you purchase, please use your email invite to verify your address so we can send order updates.">{{ 'tn1c765d0d' | t }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("data-animation","default");currentSection.setAttribute("class","b-navigation w-nav");currentSection.setAttribute("data-easing2","ease");currentSection.setAttribute("data-easing","ease");currentSection.setAttribute("data-collapse","medium");currentSection.setAttribute("data-w-id","575ac3a0-f628-cb94-695b-6557dd7e5ac0");currentSection.setAttribute("role","banner");currentSection.setAttribute("data-duration","400");</script>
+        
+{% schema %}
+{
+  "name": "Navbar2",
+  "tag": "div",
+  "class": "b-navigation w-nav",
+  "settings": [
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link Text",
+      "default": "ShoP ALL"
+    }
+  ]
+}
+{% endschema %}
